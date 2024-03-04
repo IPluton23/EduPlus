@@ -32,17 +32,9 @@ a {
    margin: 0 20px;
 }
 
-.nav-links-left {
-   
-}
-
 .nav-links-right {
 	width: 100%;
 	justify-content: flex-end;
-}
-
-.logo-container {
-   
 }
 
 .logo {
@@ -77,10 +69,10 @@ a {
 .hero-text h1 {
    font-size: 128px;
    font-family: "Raleway";
-   margin: 0;
+   margin: 20px 0px 50px 0px;
 }
 
-.hero-text a {
+.hero-text a { 
    font-size: 30px;
    font-weight: 900;
    font-family: "Raleway";
