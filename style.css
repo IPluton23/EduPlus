@@ -1,32 +1,107 @@
-body {
+* {
    margin: 0;
    padding: 0;
+   box-sizing: border-box;
 }
 
-
 #nav {
+   background-color: #ffffff;
    display: flex;
    align-items: center;
    height: 64px;
    margin: 20px 40px 0px 40px;
    padding: 0 40px;
    border-radius: 50px;
-   box-shadow: 0px 1px 4px 0px #dddddd;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.33);
+   position: absolute;
+   width: 95%;
 }  
+
+a {
+   text-decoration: none;
+}
 
 .nav-links {
    display: flex;
    width: 30%;
+   padding: 0;
 }  
 
 .nav-links li {
    list-style: none;
    margin: 0 20px;
-} 
-.nav-links-right{
+}
+
+.nav-links-left {
+   
+}
+
+.nav-links-right {
 	width: 100%;
 	justify-content: flex-end;
 }
+
 .logo-container {
+   
+}
+
+.logo {
+   margin: 0;
+   padding: 0;
+}
+
+#hero {
+   background-image: url("src/backgorund.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   height: 100vh;
+
+}
+
+.hero-text {
+   color: #fff;
+   text-align: center;
+}
+
+.hero-text p {
+   font-size: 38px;
+   font-family: "Raleway";
+}
+
+.hero-text h1 {
+   font-size: 128px;
+   font-family: "Raleway";
+   margin: 0;
+}
+
+.hero-text a {
+   font-size: 30px;
+   font-weight: 900;
+   font-family: "Raleway";
+   color: #fff;
+}
+
+.hero-text button {
+   background-color: #f07115;
+   width: 320px;
+   height: 75px;
+   border: 0px;
+   border-radius: 10px;
+}
+
+.nav-links a {
+   color: #000;
+   font-size: 18px;
+   font-family: "Roboto", sans-serif;
+}
+
+.nav-links a:hover {
+   color: #f07115;
 
 }
