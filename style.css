@@ -4,17 +4,19 @@
    box-sizing: border-box;
 }
 
+
 #nav {
-   background-color: #ffffff;
+   /* background-color: rgba(0, 0, 0, 0.1); */
+   background-color: #eee;
    display: flex;
    align-items: center;
    height: 64px;
-   margin: 20px 40px 0px 40px;
+   margin: 20px 0px 0px 40px;
    padding: 0 40px;
    border-radius: 50px;
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.33);
    position: absolute;
-   width: 95%;
+   width: 95vw;
 }  
 
 a {
@@ -25,6 +27,7 @@ a {
    display: flex;
    width: 30%;
    padding: 0;
+   
 }  
 
 .nav-links li {
@@ -42,34 +45,41 @@ a {
    padding: 0;
 }
 
-#hero {
-   background-image: url("src/backgorund.jpg");
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
+.hero-img {
+   position: fixed;
+   z-index: -1;
+   width: 100vw;
+}
 
+#hero {
    display: flex;
    justify-content: center;
    align-items: center;
-   
    height: 100vh;
+}
 
+.hero-img img {
+   width: 110%;
+   height: 100%;
+   /* object-fit: cover; */
+   /* object-position: 50% 30%; */
 }
 
 .hero-text {
    color: #fff;
    text-align: center;
+   margin-top: 5%;
 }
 
 .hero-text p {
-   font-size: 38px;
+   font-size: 2.375rem;
    font-family: "Raleway";
 }
 
 .hero-text h1 {
-   font-size: 128px;
+   font-size: 8rem;
    font-family: "Raleway";
-   margin: 20px 0px 50px 0px;
+   margin: 3% 0;
 }
 
 .hero-text a { 
@@ -80,11 +90,46 @@ a {
 }
 
 .hero-text button {
-   background-color: #f07115;
+   /* background-color: #f07115; */
+   background: linear-gradient(to right, #fc2948, #ff8602);
    width: 320px;
    height: 75px;
    border: 0px;
    border-radius: 10px;
+}
+
+
+@property --color1 {
+   syntax: '<color>';
+   initial-value: rgba(252, 41, 72,  0);
+   inherits: false;
+ }
+ 
+ @property --color2 {
+   syntax: '<color>';
+   initial-value: rgba(255, 134, 2, 0);
+   inherits: false;
+ }
+
+
+.hero-text button:hover .btn-shadow {
+   cursor: pointer;
+   --color1: rgba(252, 41, 72, 1);
+   --color2: rgba(255, 134, 2, 1);
+   transition: --color1 0.5s, --color2 0.5s;
+
+}
+
+.btn-shadow {
+   width: 270px;
+   height: 75px;
+   background: linear-gradient(to right, var(--color1), var(--color2));
+   position: absolute;
+   margin-left: 24px;   
+   margin-top: -50px;
+   filter: blur(20px);
+   z-index: -1;
+   transition: --color1 0.5s, --color2 0.5s;
 }
 
 .nav-links a {
@@ -96,4 +141,22 @@ a {
 .nav-links a:hover {
    color: #f07115;
 
+}
+#page{
+   background-color: white;
+   border-radius: 30px;
+   width: 100%;
+   margin: auto;
+   padding: 10px 30px;
+}
+
+.about-text{
+   padding: 5px;
+}
+.about-text h2{
+   font-size: 96px;
+   font-family: "Raleway";
+}
+.about-text p{
+   font-family: "Roboto";
 }
