@@ -4,6 +4,13 @@
    box-sizing: border-box;
 }
 
+p {
+   font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3 {
+   font-family: "Raleway", sans-serif;
+}
 
 #nav {
    /* background-color: rgba(0, 0, 0, 0.1); */
@@ -142,21 +149,94 @@ a {
    color: #f07115;
 
 }
-#page{
+#page-container {
    background-color: white;
-   border-radius: 30px;
+   /* border-radius: 30px; */
    width: 100%;
    margin: auto;
-   padding: 10px 30px;
+   padding: 80px 100px;
+}
+/*About Us*/
+.about-text {
+   padding: 5px;
+   display: flex;
+   flex-direction: row;
+}
+.about-header {
+   font-size: 7rem;
+   margin-right: 100px;
+   font-family: "Raleway";
+   background: linear-gradient(to right, #fc2948, #ff8602);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   margin-top: -20px;
+}
+.about-text p {
+   font-family: "Roboto";
+   font-size: 1.1rem;
 }
 
-.about-text{
+/*Portfolio*/
+#portfolio{
+   margin-top: 10vh;
+}
+.portfolio-text{
    padding: 5px;
+   display: flex;
+   flex-direction: row;
 }
-.about-text h2{
-   font-size: 96px;
+.portfolio-header{
+   text-align: right;
+   font-size: 7rem;
+   /*margin-right: 50px;*/
    font-family: "Raleway";
+   background: linear-gradient(to right, #ff8602, #fc2948);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  /* margin-top: -20px;*/
 }
-.about-text p{
+.portfolio-text p{
    font-family: "Roboto";
+   font-size: 1.1rem;
+}
+
+
+.dots {
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   background: linear-gradient(to right, #fc2948, #ff8602);
+   margin: 70px auto;
+}
+
+.dots::after {
+   content: "";
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   background: linear-gradient(to right, #fc2948, #ff8602);
+   position: relative;
+   left: 200px;
+   top: -70px;
+   display: block;
+}
+.dots::before {
+   content: "";
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+   background: linear-gradient(to right, #fc2948, #ff8602);
+   display: block;
+   position: relative;
+   left: -200px;
+}  
+
+
+
+#footer {
+   background-color: #ddd;
+   display: flex;
+   flex-direction: row;
 }
