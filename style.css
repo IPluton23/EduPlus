@@ -8,9 +8,12 @@ p {
    font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
    font-family: "Raleway", sans-serif;
 }
+
+
+/* Navigation */
 
 #nav {
    /* background-color: rgba(0, 0, 0, 0.1); */
@@ -50,10 +53,24 @@ a {
 	justify-content: flex-end;
 }
 
+.nav-links a {
+   color: #000;
+   font-size: 18px;
+   font-family: "Roboto", sans-serif;
+}
+
+.nav-links a:hover {
+   color: #f07115;
+
+}
+
 .logo {
    margin: 0;
    padding: 0;
 }
+
+
+/* Hero Section */
 
 .hero-img {
    position: fixed;
@@ -142,16 +159,7 @@ a {
    transition: --color1 0.5s, --color2 0.5s;
 }
 
-.nav-links a {
-   color: #000;
-   font-size: 18px;
-   font-family: "Roboto", sans-serif;
-}
 
-.nav-links a:hover {
-   color: #f07115;
-
-}
 #page-container {
    background-color: #fff;
    /* border-radius: 30px; */
@@ -167,9 +175,6 @@ a {
    flex-direction: row;
 }
 
-#about img {
-   /* border-radius: 10px; */
-}
 
 .about-header {
    /* text-align: center; */
@@ -208,15 +213,13 @@ a {
 .portfolio-header {
    text-align: right;
    font-size: 5rem;
-   /*margin-right: 50px;*/
    font-family: "Raleway", sans-serif;
    background: linear-gradient(to right, #ff8602, #fc2948);
    background-clip: text;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    text-align: center;
-  /* margin-top: -20px;*/
-  margin-bottom: 20px;
+   margin-bottom: 20px;
 }
 
 .portfolio-text p {
@@ -224,58 +227,57 @@ a {
    font-size: 1.1rem;
 }
 
-.portfolio-text a {
-   text-decoration: none;
-   display: block;
-   color: #fff;
+@property --color3 {
+   syntax: '<color>';
+   initial-value: rgba(252, 41, 72,  0);
+   inherits: false;
+}
+ 
+ @property --color4 {
+   syntax: '<color>';
+   initial-value: rgba(255, 134, 2, 0);
+   inherits: false;
 }
 
 .portfolio-button {
-   background: linear-gradient(to right, #fc2948, #ff8602);
-   width: 320px;
-   height: 75px;
-   border: 0px;
-   border-radius: 10px;
-   display: block;
-   margin: 0 auto;
-}
-
-.portfolio-button a { 
-   font-size: 27px;
-   font-weight: 900;
-   font-family: "Raleway", sans-serif;
-   color: #fff;
-}
-
-.portfolio-button {
-   /* background-color: #f07115; */
    background: linear-gradient(to right, #fc2948, #ff8602);
    width: 270px;
    height: 65px;
-   border: 0px;
+   border: none;
    border-radius: 10px;
+   display: block;
    margin: 0 auto;
    margin-top: 20px;
+   z-index: 1;
+   position: relative;
 }
 
-.portfolio-button:hover .btn-shadow {
-   cursor: pointer;
-   --color1: rgba(252, 41, 72, 1);
-   --color2: rgba(255, 134, 2, 1);
-   transition: --color1 0.5s, --color2 0.5s;
-
+.portfolio-button a { 
+   position: relative;
+   font-family: "Raleway", sans-serif;
+   color: #fff;
+   font-size: 27px;
+   font-weight: 900;
+   z-index: 1;
 }
 
-.btn-shadow {
-   width: 270px;
-   height: 75px;
-   background: linear-gradient(to right, var(--color1), var(--color2));
+.btn-shadow-2 {
+   width: 230px;
+   height: 55px;
+   background: linear-gradient(to right, var(--color3), var(--color4));
    position: absolute;
-   margin-left: 24px;   
-   margin-top: -50px;
+   margin-left: 19px;
+   margin-top: -35px;
    filter: blur(20px);
    z-index: -1;
-   transition: --color1 0.5s, --color2 0.5s;
+   transition: --color3 0.5s, --color4 0.5s;
+}
+
+.portfolio-button:hover .btn-shadow-2 {
+   cursor: pointer;
+   --color3: rgba(252, 41, 72, 1);
+   --color4: rgba(255, 134, 2, 1);
+   transition: --color3 0.5s, --color4 0.5s;
 }
 
 /*
@@ -406,33 +408,31 @@ a {
    transition: all ease-in-out 0.5s;
  }
  
+ 
  .form-button:hover {
-   background: rgba(255, 255, 255, 0.5);
+   background: rgba(255, 255, 255, 0.7);
    color: #000;
+   border: 1,5px rgba(255, 255, 255, 0.6);
    
    /* background: linear-gradient(to right, #fc2948, #ff8602);
    border: none; */
    /* color: #450c73; */
    /* border: 2.1px solid #450c73; */
+ }/* border: 2.1px solid #450c73; */
+ 
+
+
+
+
+ #footer-container{
+   margin: 0px 0px 0px 0px;
  }
-
-
-
-
-
 
 #footer {
    background-color: #eee;
    padding: 20px 50px;
 }
 
-.youtube {
-   width: 37px !important;
-}
-
-.facebook {
-   margin-top: 2px;
-}
 
 .footer-list img{
    width: 30px;
@@ -445,6 +445,11 @@ a {
    margin-top: 10px;
 }
 
+.media-text{
+   text-align: center;
+   margin-bottom: 10px;
+}
+
 .footer-media{
    width: 100%;
 }
@@ -455,4 +460,11 @@ a {
    justify-content: center;
 }
 
+.youtube {
+   width: 37px !important;
+}
 
+.facebook {
+   margin-top: 2px;
+   margin-left: 0px !important;
+}
