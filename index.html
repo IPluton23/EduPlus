@@ -14,28 +14,29 @@
 </head>
 
 <body>
+
    <nav id="nav">
       <div class="logo-container">
          <a href="index.html"><img class="logo" src="src/Logo/LogoOnly.png" alt="EduPlus Logo" width="40"></a>
       </div>
       <ul class="nav-links nav-links-left">
-         <li><a href="#">Link</a></li>
-         <li><a href="#">Link</a></li>
-         <li><a href="#">Link</a></li>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Accommodation</a></li>
+         <li><a href="#">Cultural Programme</a></li>
          <li><a href="#">Link</a></li>
       </ul>
       <ul class="nav-links nav-links-right">
          <li><a href="#">Link</a></li>
-         <li><a href="#">Link</a></li>
-         <li><a href="#">Link</a></li>
-         <li><a href="#">Link</a></li>
+         <li><a href="#">Projects</a></li>
+         <li><a href="#">Plan Your Future</a></li>
+         <li><a href="#">More</a></li>
       </ul>
    </nav>
 
    <div class="hero-img">
       <img src="src/backgorundDark.png" alt="background Image">
    </div>
-   <div id="hero">
+   <section id="hero">
       <div class="hero-text">
          <p>Professionally Organised Erasmus+ Internships in Braga</p>
          <h1>Only With<br>EduPlus</h1>
@@ -44,44 +45,61 @@
             <div class="btn-shadow"></div>
          </button>
       </div>
-   </div>
+   </section>
 
    <div id="page-container">
-      <div id="about">
-         <!-- <h2 class="about-header">About Us</h2> -->
-         <div class="about-text">
-            <!-- <img src="src/about-us.png" alt="About us image"> -->
-            <h3 class="about-header">About Us!</h3>
+      <section id="about">
+         <img src="src/about-us.png" alt="About us image">
+         <div class="about-text section-text">
+            <h3 class="about-header section-header">About Us!</h3>
             <p>EduPlus - European Center for Education and Skills Development, Lda, is a Portuguese company specializing in the implementation of training programs, internships, apprenticeships, various types of scientific panels, language and cultural activities, methodological workshops organized under various EU structures and programmes, mainly under the Erasmus + operational program. The company cooperates with several dozen local employers of the Portuguese market who offer foreign trainees optimal conditions for professional development combined with the development of soft skills.
                <br><br>EduPlus's personal development is no less important than professional development. The company consists of a young team of educators and administrative and technical employees who, through their education and experience, ensure the proper quality of services offered by the company
             </p>
          </div>
-      </div>
+      </section>
 
-      <div class="dots"></div>
+      <!--<div-- class="dots"></div-->
 
-      <div id="portfolio">
-         <div class="portfolio-text">
-            <p>We have gathered basic information about Eduplus in one document to give everyone interested an opportunity to familiarize with our offer. You will find there, among others our PIC number (indespensable in cooperation under the Erasmus + programme), contact details, description of accommodation offered to project participants and selected places in the north of Portugal worth recommending.</p>
-            <h3 class="portfolio-header">Our Portfolio</h3>
-         </div>
-      </div>
+      <section id="portfolio">
+         <h3 class="portfolio-header">Our Portfolio</h3>
+         <p>We have gathered basic information about Eduplus in one document to give everyone interested an opportunity to familiarize with our offer. You will find there, among others our PIC number (indespensable in cooperation under the Erasmus + programme), contact details, description of accommodation offered to project participants and selected places in the north of Portugal worth recommending.</p>
+         <button class="portfolio-button"><a href="src/eduplus-portfolio.pdf" target="_blank">Download</a></button>
+         <div class="btn-shadow"></div>
+      </section>
 
-      <footer id="footer">
-         <p>Website made during Erasmus+ 2024 by: Karol Pluto Prądzynski, Martyna Plutowska, Szymon Bulczak and Jakub Klasa</p>
-            <div class="footer-logo">
-               <img src="src/Logo/LogoOnly.png" alt="EduPlus Logo" width="40">
-            </div>
-            <div class="footer-links">
-               <ul>
-                  <li><a href="#">Media</a></li>
-                  <li><a href="#">Media</a></li>
-                  <li><a href="#">Media</a></li>
-                  <li><a href="#">Media</a></li>
-               </ul>
-            </div>
-      </footer>
    </div>
+
+   
+   <section class="contact" id="contact">
+      <h3 class="contact-header">Contact<br>Us!</h3>
+      <div class="contact-text">
+         <p>Phone: +351 253 262 000</p>
+         <p>E-mail: eduplusprojectssylwia@gmail.com</p>
+         <p>Address : Avenida da Liberdade 546, Braga</p>
+      </div>
+      <form action="mailto:eduplusprojectssylwia@gmail.com" class="form">
+        <label for="name">name</label>
+        <input type="text" class="form-input" id="name" minlength="3" name="first-name">
+        <label for="email">e-mail</label>
+        <input type="email" class="form-input" id="email" required name="email">
+        <label for="message">message</label>
+        <textarea id="message" cols="30" rows="10" minlength="5" required name="messenge"></textarea>
+        <input type="submit" class="form-button" value="send">
+      </form>
+    </section>
+   <footer id="footer">
+      <div class="footer-media">
+         <ul class="footer-list">
+            <li><a href="https://www.facebook.com/eduplusprojects"><img class="facebook" src="src/Icons/facebook.svg" alt="facebook"></a></li>
+            <li><a href="https://www.instagram.com/_eduplus.braga/"><img src="src/Icons/instagram.svg" alt="instagram"></a></li>
+            <li><a href="https://www.youtube.com/watch?v=Jf2bX9fuUR8"><img class="youtube" src="src/Icons/youtube.svg" alt="youtube"></a></li>
+         </ul>
+      </div>
+      <p class="footer-left">
+      Website made during Erasmus+ 2024 by:
+      Karol Pluto Prądzynski, Martyna Plutowska, Szymon Bulczak and Jakub Klasa
+      </p>
+   </footer>
 </body>
 
 </html>
