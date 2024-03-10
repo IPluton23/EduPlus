@@ -90,8 +90,7 @@ a {
 .hero-img img {
    width: 110%;
    height: 100%;
-   /* object-fit: cover; */
-   /* object-position: 50% 30%; */
+   object-fit: cover;
 }
 
 .hero-text {
@@ -170,7 +169,9 @@ a {
    padding: 80px 100px;
 }
 
+
 /* About Us */
+
 #about {
    padding: 5px;
    display: flex;
@@ -179,8 +180,7 @@ a {
 
 
 .about-header {
-   /* text-align: center; */
-   font-size: 2rem;
+   font-size: 4rem;
    margin-right: 100px;
    font-family: "Raleway", sans-serif;
    background: linear-gradient(to right, #fc2948, #ff8602);
@@ -188,7 +188,7 @@ a {
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
    margin-top: -10px;
-   margin-bottom: 1.1rem;
+   margin-bottom: 1rem;
 }
 
 .about-text {
@@ -200,7 +200,9 @@ a {
    font-family: "Roboto", sans-serif;
 }
 
+
 /* Portfolio */
+
 #portfolio {
    margin-top: 10vh;
 }
@@ -213,9 +215,9 @@ a {
 
 .portfolio-header {
    text-align: right;
-   font-size: 5rem;
+   font-size: 4rem;
    font-family: "Raleway", sans-serif;
-   background: linear-gradient(to right, #ff8602, #fc2948);
+   background: linear-gradient(to right, #fc2948, #ff8602);
    background-clip: text;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
@@ -280,39 +282,8 @@ a {
    transition: --color3 0.5s, --color4 0.5s;
 }
 
-/*
-.dots {
-   width: 70px;
-   height: 70px;
-   border-radius: 50%;
-   background: linear-gradient(to right, #fc2948, #ff8602);
-   margin: 70px auto;
-}
 
-.dots::after {
-   content: "";
-   width: 70px;
-   height: 70px;
-   border-radius: 50%;
-   background: linear-gradient(to right, #fc2948, #ff8602);
-   position: relative;
-   left: 200px;
-   top: -70px;
-   display: block;
-}
-
-.dots::before {
-   content: "";
-   width: 70px;
-   height: 70px;
-   border-radius: 50%;
-   background: linear-gradient(to right, #fc2948, #ff8602);
-   display: block;
-   position: relative;
-   left: -200px;
-}  
-*/
-
+/* Contact */
 
 .contact {
    /* background: radial-gradient(circle at 138%, #ff8602 10%, #fc2948  99%); */
@@ -328,7 +299,7 @@ a {
  }
  
  .contact-header {
-   font-size: 63px;
+   font-size: 4rem;
    font-family: "Raleway", sans-serif;
    font-weight: 700;
    color: #fff;
@@ -490,15 +461,29 @@ a {
       transition: all ease-in-out .5s;
       transform: translateY(-50%);
       margin: 0 auto;
-      /* padding: unset; */
       border-radius: 0;
       box-shadow: none;
+      padding: 50px 0px;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
     }
   
     .nav-links {
       flex-direction: column;
       justify-items: center;
-      /* height: 100%; */
+      align-items: center;
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
+   }
+   
+   .nav-links li {
+      margin: 10px 0;
+    }
+
+    .nav-links a {
+      font-size: 1.5rem;
     }
    
    .nav-links-left, .nav-links-right {
@@ -507,11 +492,20 @@ a {
    }
 
     .nav--open {
-      display: block;
+      display: flex;
       opacity: 1;
       pointer-events: unset;
       transform: translateY(0%);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
+
+
+    .logo-container img {
+      margin: 0 auto;
+      display: block;
+    } 
   
     .hamburger {
       display: block;
@@ -550,5 +544,77 @@ a {
   
     .hamburger__line::after {
       margin-top: 10px;
+    }
+
+    /* Hero Section */
+
+    #hero {
+      /* height: 100%;
+      width: 100%;
+      margin-top: 100px; */
+    }
+    
+    .hero-img {
+      height: 100%;
+      /* width: 100vw; */
+    }
+
+    .hero-text h1 {
+      font-size: 6rem;
+   }
+   .hero-text p {
+      font-size: 1.5rem;
+   }
+
+   #page-container {
+      padding: 60px 50px;
+   }
+
+    /* ABOUT SECTION */
+   #about {
+      flex-direction: column;
+   }
+
+   #about img {
+      order: 2;
+   }
+
+   .about-header {
+      margin-right: 0;
+      text-align: center;
+   }
+
+   .about-text {
+      margin: 0;
+      margin-bottom: 30px;
+      /* text-align: center; */
+   }
+
+   .portfolio-text {
+      text-align: left;
+   }
+
+   /* Contact */
+
+   .contact {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      padding-top: 30px;
+      margin: 0 auto;
+    }
+
+    .contact-text {
+      margin: 0 auto;
+      margin: 20px auto;
+    }
+
+    .form {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    .form-button {
+      margin: 0 auto;
+      width: 100%;
     }
   }

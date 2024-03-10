@@ -5,7 +5,7 @@
 .header h1{
     text-align: center;
     margin-top: 50px;
-    font-size: 2rem;
+    font-size: 4rem;
     background: linear-gradient(to right, #fc2948, #ff8602);
     background-clip: text;
     -webkit-background-clip: text;
@@ -24,7 +24,8 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 50px; 
+    margin-bottom: 30px; 
+    margin-top: 100px;
 }
 
 .culture img{
@@ -38,4 +39,8 @@
     margin: 40px 100px;
 }
 
+.culture img{
+    border-radius: 10px;
+    width: 90%;
+}
 
