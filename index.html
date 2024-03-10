@@ -6,7 +6,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="icon" type="image/x-icon" href="src/Logo/favicon.ico">
    <link rel="stylesheet" href="style.css">
-
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
@@ -15,23 +14,38 @@
 
 <body>
 
-   <nav id="nav">
+   <nav class="nav">
       <div class="logo-container">
          <a href="index.html"><img class="logo" src="src/Logo/LogoOnly.png" alt="EduPlus Logo" width="40"></a>
       </div>
       <ul class="nav-links nav-links-left">
          <li><a href="index.html">Home</a></li>
          <li><a href="accommodation.html">Accommodation</a></li>
-         <li><a href="#">Cultural Programme</a></li>
-         <li><a href="#">Link</a></li>
+         <li><a href="culture.html">Cultural Programme</a></li>
       </ul>
       <ul class="nav-links nav-links-right">
-         <li><a href="#">Link</a></li>
          <li><a href="#">Projects</a></li>
          <li><a href="#">Plan Your Future</a></li>
-         <li><a href="#">More</a></li>
+         <li><a href="#">Contact</a></li>
       </ul>
    </nav>
+
+   <button class="hamburger">
+      <span class="hamburger__line"></span>
+    </button>
+
+
+    <!-- <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#projects" class="nav__item-link">Projects</a></li>
+        <li class="nav__item"><a href="#team" class="nav__item-link">Team culture</a></li>
+        <li class="nav__item"><a href="#experience" class="nav__item-link">Experience</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__item-link">Contact</a></li>
+        <li class="nav__item"><a href="https://github.com/Nartynka/we-create" class="nav__item-link" target="_blank">GitHub Repo</a></li>
+      </ul>
+    </nav> -->
+
+
 
    <div class="hero-img">
       <img src="src/backgorundDark.png" alt="background Image">
@@ -41,7 +55,7 @@
          <p>Professionally Organised Erasmus+ Internships in Braga</p>
          <h1>Only With<br>EduPlus</h1>
          <button>
-            <a href="#">Contact us!</a>
+            <a href="#contact">Contact us!</a>
             <div class="btn-shadow"></div>
          </button>
       </div>
@@ -62,7 +76,7 @@
 
       <section id="portfolio">
          <h3 class="portfolio-header">Our Portfolio</h3>
-         <p>We have gathered basic information about Eduplus in one document to give everyone interested an opportunity to familiarize with our offer. You will find there, among others our PIC number (indespensable in cooperation under the Erasmus + programme), contact details, description of accommodation offered to project participants and selected places in the north of Portugal worth recommending.</p>
+         <p class="portfolio-text">We have gathered basic information about Eduplus in one document to give everyone interested an opportunity to familiarize with our offer. You will find there, among others our PIC number (indespensable in cooperation under the Erasmus + programme), contact details, description of accommodation offered to project participants and selected places in the north of Portugal worth recommending.</p>
          
          <button class="portfolio-button">
             <a href="src/eduplus-portfolio.pdf" target="_blank">Download</a>
@@ -83,7 +97,7 @@
          <p>E-mail: eduplusprojectssylwia@gmail.com</p>
          <p>Address : Avenida da Liberdade 546, Braga</p>
       </div>
-      <form action="mailto:mplutwska@gmail.com" method="get" enctype="text/plain" class="form">
+      <form action="mailto:@gmail.com" method="get" enctype="text/plain" class="form">
          
         <label for="name">name</label>
         <input type="text" class="form-input" id="name" minlength="3" name="first-name">
@@ -110,6 +124,7 @@
          Karol Pluto Prądzynski, Martyna Plutowska, Szymon Bulczak and Jakub Klasa
       </p>
    </footer>
+   <script src="script.js"></script>
 </body>
 
 </html>

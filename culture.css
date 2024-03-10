@@ -1,0 +1,41 @@
+.nav{
+    background-color: #fff;
+}
+
+.header h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+    background: linear-gradient(to right, #fc2948, #ff8602);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header p{
+ text-align: center;
+ margin-bottom: 100px;
+}
+
+.culture h2{
+    text-align: center;
+    font-size: 2rem;
+    background: linear-gradient(to right, #fc2948, #ff8602);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 50px; 
+}
+
+.culture img{
+    margin: 0 auto;
+    display: block;
+}
+
+.culture p{
+    text-align: center;
+    margin: 0 auto;
+    margin: 40px 100px;
+}
+
+
