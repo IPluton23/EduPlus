@@ -36,6 +36,7 @@ h2{
 .second{
     margin-top: 60px;
     display: flex;
+
 }
 
 .mid-text{
@@ -70,4 +71,43 @@ h2{
     font-family: "Roboto", sans-serif;
     line-height: 1.3;
     font-size: 1.1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hamburger__line, .hamburger__line::before, .hamburger__line::after{
+        background-color: #ff8602;
+    }
+    
+
+
+    .first h1 {
+        font-size: 2rem;
+    }
+    
+    .first{
+        flex-direction: column;
+    }
+
+    .second{
+        flex-direction: column;
+    }
+
+    .second img {
+        order: 2;
+    }
+
+    .mid-text{
+        width: 100%;
+    }
+    
+    .third{
+        flex-direction: column;
+    }
+
+    .forth{
+        flex-direction: column;
+    }
+
+
 }

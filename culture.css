@@ -4,7 +4,7 @@
 
 .header h1{
     text-align: center;
-    margin-top: 50px;
+    margin: 50px auto;
     font-size: 4rem;
     background: linear-gradient(to right, #fc2948, #ff8602);
     background-clip: text;
@@ -14,7 +14,7 @@
 
 .header p{
  text-align: center;
- margin-bottom: 100px;
+ margin-bottom: 50px;
 }
 
 .culture h2{
@@ -25,7 +25,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 30px; 
-    margin-top: 100px;
 }
 
 .culture img{
@@ -35,12 +34,43 @@
 
 .culture p{
     text-align: center;
-    margin: 0 auto;
     margin: 40px 100px;
 }
+/*.culture p::first-letter{
+    font-weight: bold;
+    font-size: 2.5rem;
+}*/
 
 .culture img{
     border-radius: 10px;
     width: 90%;
 }
 
+@media screen and (max-width: 768px) {
+    .hamburger__line, .hamburger__line::before, .hamburger__line::after{
+        background-color: #ff8602;
+    }
+    
+
+    .header h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .culture h2{
+        margin: 20px auto;
+    }
+
+    .header p {
+        margin-bottom: 30px;
+    }
+    
+    .culture p{
+        margin: 0 auto;
+    }
+
+    .culture img{
+        margin-bottom: 20px;
+    }
+
+}
